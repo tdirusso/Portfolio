@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+body {
+    background: #252525;
+    font-family: 'Source Sans Pro', serif;
+    margin: 0px;
+    color: white;
+    overflow-x: hidden;
+}
+
+.container {
+    position: relative;
+}
+
+.header-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #6bea7c;
+    margin-left: 2px;
+}
+
+p {
+    margin: 0;
+}

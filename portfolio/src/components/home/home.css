@@ -1,0 +1,144 @@
+.home-container {
+    height: 100vh;
+    align-items: center;
+}
+
+.home-content {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 60px;
+}
+
+.profile-image {
+    height: 150px;
+    width: 150px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.profile-name {
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 45px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.profile-title {
+    font-weight: 200;
+    margin-top: 0px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.social-links {
+    list-style: none;
+    margin-top: 50px;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.social-link {
+    display: inline-block;
+    font-size: 35px;
+    margin: 0px 15px;
+    cursor: pointer;
+    transition: color ease 250ms, transform ease 250ms;
+}
+
+.social-link:hover {
+    color: #6bea7c;
+    transform: scale(1.1)
+}
+
+.hire-button {
+    background: #FF4C60;
+    color: white;
+    display: inline-block;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 35px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 50px;
+    box-shadow: 0px 5px 5px #000000;
+}
+
+.hire-button:hover {
+    animation: zoom-out-in 350ms forwards;
+}
+
+@keyframes zoom-out-in {
+    35% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.scroll-tip {
+    position: absolute;
+    bottom: 25px;
+    font-weight: 300;
+    text-align: center;
+    width: 100%;
+}
+
+.scroll-tip span {
+    display: inline-block;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.scroll-tip i {
+    display: block;
+    margin: -10px 0px;
+    font-size: 20px;
+    animation: fadeInDown 2s infinite;
+    color: #FF4C60;
+}
+
+.scroll-tip i:nth-of-type(2) {
+    animation-delay: 500ms;
+}
+
+.scroll-tip i:nth-of-type(3) {
+    animation-delay: 1s;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .home-content {
+        top: 40px;
+    }
+    .scroll-tip {
+        display: none;
+    }
+    .profile-name {
+        margin-top: 25px;
+    }
+    .profile-title {
+        margin-top: 20px;
+    }
+    .social-links {
+        margin-top: 20px;
+    }
+    .hire-button {
+        margin-top: 25px;
+    }
+}

@@ -1,0 +1,108 @@
+.about-container {
+    padding: 50px 0px;
+}
+
+.about-header {
+    font-size: 50px;
+}
+
+.about-header .header-dot {
+    margin-left: 5px;
+}
+
+.bitmoji-waving {
+    border: 2px solid white;
+    height: 225px;
+    width: 225px;
+    border-radius: 50%;
+    box-shadow: 5px 10px 25px #000000;
+}
+
+.about-text-container {
+    margin-left: 50px;
+    background-color: #6b6be5;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 5px 10px 25px #000000;
+    min-width: 250px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+.about-text {
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.client-content {
+    display: flex;
+    margin-top: 40px;
+    background: white;
+    color: black;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 5px 10px 25px #000000;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.client-header {
+    margin-top: 0px;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    flex-basis: 100%;margin-bottom: 10px;
+}
+
+.client-header::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 40%;
+    background: black;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.client {
+    flex-basis: 20%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.client-logo {
+    height: 45px;
+    width: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+    .client {
+        flex-basis: 25%;
+    }
+    .about-content {
+        flex-wrap: wrap;
+        justify-content: center;   
+    }
+    .about-text-container {
+        margin-top: 25px;
+        margin-left: 0px;
+        min-width: 0px;
+    }
+    .about-header {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .client {
+        flex-basis: 30%;
+        margin-bottom: 5px;
+    }
+    .client-logo {
+        height: 30px;
+    }
+}

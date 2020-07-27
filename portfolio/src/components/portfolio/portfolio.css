@@ -1,0 +1,43 @@
+.main-container {
+    margin-left: 280px;
+    padding-left: 150px;
+    padding-right: 150px;
+    transition: margin-left ease-out 350ms;
+}
+
+.fa-bars {
+    display: none;
+    font-size: 30px;
+    position: fixed;
+    left: 15px;
+    top: 15px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 1200px) {
+    .main-container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .fa-bars {
+        display: block;
+    }
+    .main-container {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .fa-bars {
+        display: block;
+    }
+    .main-container {
+        padding-right: 25px;
+        padding-left: 25px;
+        overflow: hidden;
+    }
+}

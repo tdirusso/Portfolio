@@ -1,0 +1,47 @@
+.experience-icon {
+    height: 100px;
+    border-radius: 50%;
+}
+
+.experience-header {
+    text-align: center;
+    font-size: 50px;
+}
+
+.experience {
+    text-align: center;
+}
+
+.experience-date {
+    display: block;
+    color: #b9b9b9;
+    font-size: 20px;
+}
+
+.experience-details {
+    display: block;
+    font-weight: 300;
+}
+
+.experience-title {
+    font-size: 24px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.experience-separator {
+    height: 75px;
+    width: 3px;
+    text-align: center;
+    background: white;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.experience-company {
+    font-size: 28px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 10px;
+}

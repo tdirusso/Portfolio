@@ -14,7 +14,7 @@ function Home() {
 	return (
 		<div className="home-container container" id="home">
 			<div className="home-content">
-				<img src={bitmojiProfile} className="profile-image"></img>
+				<img src={bitmojiProfile} className="profile-image" alt="Hello"></img>
 				<h1 className="profile-name">Tim DiRusso</h1>
 				<h2 className="profile-title">Software Engineer</h2>
 

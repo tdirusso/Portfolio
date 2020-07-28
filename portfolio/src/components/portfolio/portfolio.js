@@ -3,6 +3,7 @@ import './portfolio.css';
 import Header from '../header/header';
 import Home from '../home/home';
 import About from '../about/about';
+import Experience from '../experience/experience';
 
 class Portfolio extends React.Component {
 
@@ -25,6 +26,7 @@ class Portfolio extends React.Component {
 				<div className="main-container">
 					<Home />
 					<About />
+					<Experience />
 				</div>
 			</div>
 		);

@@ -25,13 +25,12 @@ class Header extends React.Component {
 
                     <nav>
                         <ul className="nav-list">
-                            <li className="nav-item active" onClick={() => { }}><i className="fa fa-home"></i><span>Home</span></li>
-                            <li className="nav-item" onClick={() => { }}><i className="fa fa-user"></i>About</li>
-                            <li className="nav-item" onClick={() => { }}><i className="fa fa-suitcase"></i>Experience</li>
-                            <li className="nav-item" onClick={() => { }}><i className="fa fa-graduation-cap"></i>Education</li>
-                            <li className="nav-item" onClick={() => { }}><i className="fa fa-lightbulb-o"></i>Projects</li>
-                            <li className="nav-item" onClick={() => { }}><i className="fa fa-headphones"></i>Hobbies</li>
-                            <li className="nav-item" onClick={() => { }}><i className="fa fa-comments"></i>Contact</li>
+                            <li className="nav-item active" onClick={() => { }}>Home</li>
+                            <li className="nav-item" onClick={() => { }}>About</li>
+                            <li className="nav-item" onClick={() => { }}>Experience</li>
+                            <li className="nav-item" onClick={() => { }}>Education</li>
+                            <li className="nav-item" onClick={() => { }}>Projects</li>
+                            <li className="nav-item" onClick={() => { }}>Contact</li>
                         </ul>
                     </nav>
                 </header>

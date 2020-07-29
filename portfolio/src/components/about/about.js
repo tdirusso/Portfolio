@@ -80,21 +80,21 @@ function About() {
             <div className="tech-content">
                 <div className="languages-container tech-container">
                     <h2 className="tech-header">Languages</h2>
-                    <img src={languagesLogo} className="tech-icon"></img>
+                    <img src={languagesLogo} className="tech-icon" alt=""></img>
                     <ul className="languages-list">
                         {languages.map((language, index) => <li className="language" key={`language-${index}`}>{language}</li>)}
                     </ul>
                 </div>
                 <div className="frameworks-container tech-container">
                     <h2 className="tech-header">Frameworks</h2>
-                    <img src={frameworksLogo} className="tech-icon"></img>
+                    <img src={frameworksLogo} className="tech-icon" alt=""></img>
                     <ul className="frameworks-list">
                         {frameworks.map((framework, index) => <li className="language" key={`framework-${index}`}>{framework}</li>)}
                     </ul>
                 </div>
                 <div className="tools-container tech-container">
                     <h2 className="tech-header">Tools</h2>
-                    <img src={toolsLogo} className="tech-icon"></img>
+                    <img src={toolsLogo} className="tech-icon" alt=""></img>
                     <ul className="tools-list">
                         {tools.map((tool, index) => <li className="language" key={`tool-${index}`}>{tool}</li>)}
                     </ul>

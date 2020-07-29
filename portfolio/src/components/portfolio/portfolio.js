@@ -4,6 +4,9 @@ import Header from '../header/header';
 import Home from '../home/home';
 import About from '../about/about';
 import Experience from '../experience/experience';
+import Education from '../education/education';
+import Projects from '../projects/projects';
+import Contact from '../contact/contact';
 
 class Portfolio extends React.Component {
 
@@ -27,6 +30,9 @@ class Portfolio extends React.Component {
 					<Home />
 					<About />
 					<Experience />
+					<Education />
+					<Projects />
+					<Contact />
 				</div>
 			</div>
 		);

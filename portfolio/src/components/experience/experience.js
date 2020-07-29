@@ -12,7 +12,7 @@ function Experience() {
             <h1 className="experience-header">Experience<div className="header-dot"></div></h1>
             <div className="experiences">
                 <div class="logmein-experience experience">
-                    <img src={logMeInLogo} className="experience-icon"></img>
+                    <img src={logMeInLogo} className="experience-icon" alt="LogMeIn"></img>
                     <div className="experience-details">
                         <span className="experience-company">LogMeIn, Inc.</span>
                         <span className="experience-title">Software Engineer, Professional Services</span>
@@ -23,7 +23,7 @@ function Experience() {
                 <div class="experience-separator"></div>
 
                 <div class="redrock-experience experience">
-                    <img src={redRockLogo} className="experience-icon"></img>
+                    <img src={redRockLogo} className="experience-icon" alt="RedRock Software Corporation"></img>
                     <div className="experience-details">
                         <span className="experience-company">RedRock Software Corporation</span>
                         <span className="experience-title">Software Engineer Intern</span>
@@ -34,7 +34,7 @@ function Experience() {
                 <div class="experience-separator"></div>
 
                 <div class="sunstate-experience experience">
-                    <img src={sunstateLogo} className="experience-icon"></img>
+                    <img src={sunstateLogo} className="experience-icon" alt="SunState Equipment"></img>
                     <div className="experience-details">
                         <span className="experience-company">SunState Equipment</span>
                         <span className="experience-title">Information Technology Intern</span>

@@ -1,0 +1,62 @@
+.education-header {
+    text-align: center;
+    font-size: 50px;
+}
+
+.education-content {
+    background: #252525;
+    border-radius: 20px;
+    padding: 45px 20px;
+    display: flex;
+    box-shadow: 0px 0px 20px #ffc424;
+    justify-content: center;
+}
+
+.asu-logo {
+    height: 175px;
+    margin-right: 50px;
+}
+
+.education-school {
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+
+.education-date {
+    margin-top: 0px;
+    font-weight: 300;
+    font-size: 18px;
+    color: #b9b9b9;
+}
+
+.education-degree {
+    font-size: 22px;
+    font-weight: 300;
+    margin: 10px 0px;
+}
+
+.bitmoji-studying {
+    border: 2px solid #ffc424;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 5px 10px 25px #000000;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    bottom: 35px;
+}
+
+.education-description {
+    text-align: right;
+}
+
+@media only screen and (max-width: 767px) {
+    .education-content {
+        flex-wrap: wrap;
+    }
+    .education-description {
+        text-align: center;
+    }
+}

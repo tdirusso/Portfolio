@@ -9,6 +9,7 @@ body {
 
 .container {
     position: relative;
+    margin-bottom: 100px;
 }
 
 .header-dot {

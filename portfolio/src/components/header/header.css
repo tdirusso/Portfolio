@@ -49,14 +49,7 @@ nav {
 
 .nav-item.active {
     color: #6bea7c;
-}
-
-.nav-list i {
-    margin-right: 30px;
-    color: #6bea7c;
-    height: 18px;
-    width: 18px;
-    display: inline-block;
+    border-bottom: 1px solid #6bea7c;
 }
 
 @media only screen and (max-width: 1000px) {

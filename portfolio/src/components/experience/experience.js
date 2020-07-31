@@ -11,7 +11,7 @@ function Experience() {
         <div className="experience-container container" id="experience">
             <h1 className="experience-header">Experience<div className="header-dot"></div></h1>
             <div className="experiences">
-                <div class="logmein-experience experience">
+                <div className="logmein-experience experience">
                     <img src={logMeInLogo} className="experience-icon" alt="LogMeIn"></img>
                     <div className="experience-details">
                         <span className="experience-company">LogMeIn, Inc.</span>
@@ -20,9 +20,9 @@ function Experience() {
                     </div>
                 </div>
 
-                <div class="experience-separator"></div>
+                <div className="experience-separator"></div>
 
-                <div class="redrock-experience experience">
+                <div className="redrock-experience experience">
                     <img src={redRockLogo} className="experience-icon" alt="RedRock Software Corporation"></img>
                     <div className="experience-details">
                         <span className="experience-company">RedRock Software Corporation</span>
@@ -31,9 +31,9 @@ function Experience() {
                     </div>
                 </div>
 
-                <div class="experience-separator"></div>
+                <div className="experience-separator"></div>
 
-                <div class="sunstate-experience experience">
+                <div className="sunstate-experience experience">
                     <img src={sunstateLogo} className="experience-icon" alt="SunState Equipment"></img>
                     <div className="experience-details">
                         <span className="experience-company">SunState Equipment</span>

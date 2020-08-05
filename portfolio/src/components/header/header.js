@@ -16,10 +16,15 @@ class Header extends React.Component {
         }, 300);
     }
 
-    scrollToSection(sectionID, event) {
-        document.querySelector('.nav-item.active').classList.remove('active');
-        event.target.classList.add('active');
-        document.getElementById(sectionID).scrollIntoView();
+    scrollToSection(sectionID) {
+        if (window.innerWidth <= 1000) {
+            this.closeHeader();
+            setTimeout(() => {
+                document.getElementById(sectionID).scrollIntoView();
+            }, 500);
+        } else {
+            document.getElementById(sectionID).scrollIntoView();
+        }
     }
 
     render() {
@@ -31,12 +36,12 @@ class Header extends React.Component {
 
                     <nav>
                         <ul className="nav-list">
-                            <li className="nav-item active" onClick={(event) => this.scrollToSection('home', event)}>Home</li>
-                            <li className="nav-item" onClick={(event) => this.scrollToSection('about', event)}>About</li>
-                            <li className="nav-item" onClick={(event) => this.scrollToSection('experience', event)}>Experience</li>
-                            <li className="nav-item" onClick={(event) => this.scrollToSection('projects', event)}>Projects</li>
-                            <li className="nav-item" onClick={(event) => this.scrollToSection('education', event)}>Education</li>
-                            <li className="nav-item" onClick={(event) => this.scrollToSection('contact', event)}>Contact</li>
+                            <li className="nav-item active" id="home-nav" onClick={() => this.scrollToSection('home')}>Home</li>
+                            <li className="nav-item" id="about-nav" onClick={() => this.scrollToSection('about')}>About</li>
+                            <li className="nav-item" id="experience-nav" onClick={() => this.scrollToSection('experience')}>Experience</li>
+                            <li className="nav-item" id="projects-nav" onClick={() => this.scrollToSection('projects')}>Projects</li>
+                            <li className="nav-item" id="education-nav" onClick={() => this.scrollToSection('education')}>Education</li>
+                            <li className="nav-item" id="contact-nav" onClick={() => this.scrollToSection('contact')}>Contact</li>
                         </ul>
                     </nav>
                 </header>

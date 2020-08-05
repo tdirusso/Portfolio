@@ -12,8 +12,14 @@ class Header extends React.Component {
         this.header.current.style.removeProperty('left');
         document.querySelector('.main-container').style.removeProperty('margin-left');
         setTimeout(() => {
-            document.querySelector('.fa-bars').style.removeProperty('display');    
+            document.querySelector('.fa-bars').style.removeProperty('display');
         }, 300);
+    }
+
+    scrollToSection(sectionID, event) {
+        document.querySelector('.nav-item.active').classList.remove('active');
+        event.target.classList.add('active');
+        document.getElementById(sectionID).scrollIntoView();
     }
 
     render() {
@@ -25,12 +31,12 @@ class Header extends React.Component {
 
                     <nav>
                         <ul className="nav-list">
-                            <li className="nav-item active" onClick={() => { }}>Home</li>
-                            <li className="nav-item" onClick={() => { }}>About</li>
-                            <li className="nav-item" onClick={() => { }}>Experience</li>
-                            <li className="nav-item" onClick={() => { }}>Education</li>
-                            <li className="nav-item" onClick={() => { }}>Projects</li>
-                            <li className="nav-item" onClick={() => { }}>Contact</li>
+                            <li className="nav-item active" onClick={(event) => this.scrollToSection('home', event)}>Home</li>
+                            <li className="nav-item" onClick={(event) => this.scrollToSection('about', event)}>About</li>
+                            <li className="nav-item" onClick={(event) => this.scrollToSection('experience', event)}>Experience</li>
+                            <li className="nav-item" onClick={(event) => this.scrollToSection('projects', event)}>Projects</li>
+                            <li className="nav-item" onClick={(event) => this.scrollToSection('education', event)}>Education</li>
+                            <li className="nav-item" onClick={(event) => this.scrollToSection('contact', event)}>Contact</li>
                         </ul>
                     </nav>
                 </header>

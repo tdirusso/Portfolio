@@ -30,8 +30,8 @@ class Portfolio extends React.Component {
 					<Home />
 					<About />
 					<Experience />
-					<Education />
 					<Projects />
+					<Education />
 					<Contact />
 				</div>
 			</div>

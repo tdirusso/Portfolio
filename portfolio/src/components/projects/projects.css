@@ -14,11 +14,13 @@
     width: 100%;
     border: none;
     outline: none;
-    font-size: 24px;
+    font-size: 28px;
     transition: 0.5s;
     text-align: center;
-    background: #302f4e;
+    background: #00c3ff;
     color: white;
+    font-weight: 300;
+    border-bottom: 1px solid #252525;
 }
 
 .accordion.active {
@@ -53,10 +55,27 @@
     background-color: #252525;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.25s ease-out, padding 0.25s ease-out;
+    transition: max-height 500ms ease-out, padding 500ms ease-out;
+    font-weight: 200;
+    font-size: 20px;
 }
 
 .active + .panel {
     padding: 20px 25px;
     padding-top: 0px;
+}
+
+.panel img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 25px 0px;
+}
+
+.panel h3 {
+    font-weight: 500;
+}
+
+.panel ul {
+    padding: 0px;
+    list-style-position: inside;
 }

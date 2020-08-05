@@ -28,7 +28,7 @@ function Home() {
 				<button className="hire-button">Hire Me</button>
 			</div>
 			<div className="scroll-tip">
-				<span>Scroll Down</span>
+				<span onClick={() => document.querySelector('.nav-item:nth-child(2)').click()}>Scroll Down</span>
 				<i className="fa fa-angle-down"></i>
 				<i className="fa fa-angle-down"></i>
 				<i className="fa fa-angle-down"></i>

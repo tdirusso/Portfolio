@@ -12,7 +12,7 @@ function Contact() {
             <h2 className="have-questions">Have Questions?</h2>
             <div className="contact-separator"></div>
             <div className="get-in-touch">
-                Feel free to get in touch my sending me an email or a direct message on LinkedIn!
+                Feel free to get in touch with me by sending an email or a direct message on LinkedIn!
             </div>
             <div className="contact-buttons">
                 <button className="email-button" onClick={() => window.location.href = 'mailto:timgdirusso@gmail.com'}>Email</button>

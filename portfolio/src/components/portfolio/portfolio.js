@@ -40,10 +40,10 @@ class Portfolio extends React.Component {
 			middleScreenPixels = (window.innerHeight / 1.5).toFixed(0);
 		}
 
-		home.classList.add('animate__animated', 'animate__fadeInDown');
-		header.classList.add('animate__animated', 'animate__fadeInLeft');
+		home.classList.add('animate__animated', 'animate__fadeInDown', 'animate__faster');
+		header.classList.add('animate__animated', 'animate__fadeInLeft', 'animate__faster');
 
-		window.onscroll = function () {
+		window.onscroll = () => {
 			const homeOffset = home.getBoundingClientRect().top;
 			const aboutOffset = about.getBoundingClientRect().top;
 			const experieceOffset = experience.getBoundingClientRect().top;
@@ -55,31 +55,31 @@ class Portfolio extends React.Component {
 				self.updateNav('contact-nav');
 				if (!shownContact) {
 					shownContact = true;
-					contact.classList.add('animate__animated', 'animate__fadeInUp');
+					contact.classList.add('animate__animated', 'animate__fadeInUp', 'animate__faster');
 				}
 			} else if (educationOffset <= middleScreenPixels) {
 				self.updateNav('education-nav');
 				if (!shownEducation) {
 					shownEducation = true;
-					education.classList.add('animate__animated', 'animate__fadeInUp');
+					education.classList.add('animate__animated', 'animate__fadeInUp', 'animate__faster');
 				}
 			} else if (projectsOffset <= middleScreenPixels) {
 				self.updateNav('projects-nav');
 				if (!shownProjects) {
 					shownProjects = true;
-					projects.classList.add('animate__animated', 'animate__fadeInUp');
+					projects.classList.add('animate__animated', 'animate__fadeInUp', 'animate__faster');
 				}
 			} else if (experieceOffset <= middleScreenPixels) {
 				self.updateNav('experience-nav');
 				if (!shownExperience) {
 					shownExperience = true;
-					experience.classList.add('animate__animated', 'animate__fadeInUp');
+					experience.classList.add('animate__animated', 'animate__fadeInUp', 'animate__faster');
 				}
 			} else if (aboutOffset <= middleScreenPixels) {
 				self.updateNav('about-nav');
 				if (!shownAbout) {
 					shownAbout = true;
-					about.classList.add('animate__animated', 'animate__fadeInUp');
+					about.classList.add('animate__animated', 'animate__fadeInUp', 'animate__faster');
 				}
 			} else if (homeOffset <= middleScreenPixels) {
 				self.updateNav('home-nav');

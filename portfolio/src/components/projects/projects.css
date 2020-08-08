@@ -57,7 +57,7 @@
     overflow: hidden;
     transition: max-height 500ms ease-out, padding 500ms ease-out;
     font-weight: 200;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .active + .panel {

@@ -15,7 +15,7 @@
 .experience-date {
     display: block;
     color: #b9b9b9;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .experience-details {
@@ -24,7 +24,7 @@
 }
 
 .experience-title {
-    font-size: 24px;
+    font-size: 26px;
     display: block;
     margin-bottom: 10px;
 }
@@ -40,8 +40,20 @@
 }
 
 .experience-company {
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 400;
     display: block;
     margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+    .experience-company {
+        font-size: 26px;
+    }
+    .experience-title {
+        font-size: 24px;
+    }
+    .experience-date {
+        font-size: 20px;
+    }
 }

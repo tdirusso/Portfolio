@@ -9,7 +9,7 @@ class Projects extends React.Component {
 
     expandProject(event) {
         if (event.target.tagName === 'I') event.target = event.target.parentElement;
-        
+
         event.target.classList.toggle('active');
         event.target.firstElementChild.classList.toggle('flipped');
 
@@ -27,9 +27,8 @@ class Projects extends React.Component {
             <div className="projects-container container" id="projects">
                 <h1 className="projects-header">Projects<div className="header-dot"></div></h1>
 
-
                 <div className="projects-list">
-                    <button className="accordion first" onClick={(event) => { this.expandProject(event) }}>Lockify<i className="fa fa-caret-down"></i></button>
+                    <button className="accordion first active" onClick={(event) => { this.expandProject(event) }}>Lockify<i className="fa fa-caret-down flipped"></i></button>
                     <div className="panel">
                         <span>
                             Have you accidentally deleted or unliked a song from your Spotify playlist, only to find out there is no real way to determine exactly which song your quick and mindless fingers inadvertently swiped off the list?

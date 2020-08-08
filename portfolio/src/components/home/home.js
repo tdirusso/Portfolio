@@ -25,10 +25,10 @@ function Home() {
 					<li className="social-link" onClick={() => window.open(socialLinks.instagram, '_blank')}><i className="fa fa-instagram"></i></li>
 				</ul>
 
-				<button className="hire-button">Hire Me</button>
+				<button className="hire-button" onClick={() => document.getElementById('contact-nav').click()}>Hire Me</button>
 			</div>
 			<div className="scroll-tip">
-				<span onClick={() => document.querySelector('.nav-item:nth-child(2)').click()}>Scroll Down</span>
+				<span onClick={() => document.getElementById('about-nav').click()}>Scroll Down</span>
 				<i className="fa fa-angle-down"></i>
 				<i className="fa fa-angle-down"></i>
 				<i className="fa fa-angle-down"></i>

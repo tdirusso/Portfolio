@@ -26,12 +26,12 @@
 .education-date {
     margin-top: 0px;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 22px;
     color: #b9b9b9;
 }
 
 .education-degree {
-    font-size: 22px;
+    font-size: 26px;
     font-weight: 300;
     margin: 10px 0px;
 }
@@ -58,5 +58,8 @@
     }
     .education-description {
         text-align: center;
+    }
+    .asu-logo {
+        height: 125px;
     }
 }

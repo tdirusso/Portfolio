@@ -23,8 +23,25 @@ class Portfolio extends React.Component {
 		const projects = document.getElementById('projects');
 		const education = document.getElementById('education');
 		const contact = document.getElementById('contact');
+		const header = document.getElementById('header');
 
-		const middleScreenPixels = (window.innerHeight / 2.5).toFixed(0);
+		const firstProject = projects.querySelector('.accordion.first + .panel');
+		firstProject.style.maxHeight = '10000px';
+
+		let shownAbout = false;
+		let shownExperience = false;
+		let shownProjects = false;
+		let shownEducation = false;
+		let shownContact = false;
+
+		let middleScreenPixels = (window.innerHeight / 2).toFixed(0);
+
+		if (window.innerHeight <= 800) {
+			middleScreenPixels = (window.innerHeight / 1.5).toFixed(0);
+		}
+
+		home.classList.add('animate__animated', 'animate__fadeInDown');
+		header.classList.add('animate__animated', 'animate__fadeInLeft');
 
 		window.onscroll = function () {
 			const homeOffset = home.getBoundingClientRect().top;
@@ -34,12 +51,39 @@ class Portfolio extends React.Component {
 			const educationOffset = education.getBoundingClientRect().top;
 			const contactOffset = contact.getBoundingClientRect().top;
 
-			if (contactOffset <= middleScreenPixels && contactOffset > educationOffset) self.updateNav('contact-nav');
-			else if (educationOffset <= middleScreenPixels && educationOffset > projectsOffset) self.updateNav('education-nav');
-			else if (projectsOffset <= middleScreenPixels && projectsOffset > experieceOffset) self.updateNav('projects-nav');
-			else if (experieceOffset <= middleScreenPixels && experieceOffset > aboutOffset) self.updateNav('experience-nav');
-			else if (aboutOffset <= middleScreenPixels && aboutOffset > homeOffset) self.updateNav('about-nav');
-			else if (homeOffset <= middleScreenPixels) self.updateNav('home-nav');
+			if (contactOffset <= middleScreenPixels) {
+				self.updateNav('contact-nav');
+				if (!shownContact) {
+					shownContact = true;
+					contact.classList.add('animate__animated', 'animate__fadeInUp');
+				}
+			} else if (educationOffset <= middleScreenPixels) {
+				self.updateNav('education-nav');
+				if (!shownEducation) {
+					shownEducation = true;
+					education.classList.add('animate__animated', 'animate__fadeInUp');
+				}
+			} else if (projectsOffset <= middleScreenPixels) {
+				self.updateNav('projects-nav');
+				if (!shownProjects) {
+					shownProjects = true;
+					projects.classList.add('animate__animated', 'animate__fadeInUp');
+				}
+			} else if (experieceOffset <= middleScreenPixels) {
+				self.updateNav('experience-nav');
+				if (!shownExperience) {
+					shownExperience = true;
+					experience.classList.add('animate__animated', 'animate__fadeInUp');
+				}
+			} else if (aboutOffset <= middleScreenPixels) {
+				self.updateNav('about-nav');
+				if (!shownAbout) {
+					shownAbout = true;
+					about.classList.add('animate__animated', 'animate__fadeInUp');
+				}
+			} else if (homeOffset <= middleScreenPixels) {
+				self.updateNav('home-nav');
+			}
 		}
 	}
 

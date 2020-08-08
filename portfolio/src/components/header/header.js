@@ -30,7 +30,7 @@ class Header extends React.Component {
     render() {
         return (
             <div>
-                <header ref={this.header}>
+                <header ref={this.header} id="header">
                     <i className="fa fa-times" onClick={() => this.closeHeader()}></i>
                     <h1 className="header-title" onClick={() => window.location.reload()}>Tim<div className="header-dot"></div></h1>
 

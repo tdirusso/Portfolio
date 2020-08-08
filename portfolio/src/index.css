@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    background: #252525;
+    background: #0a2146;
     font-family: 'Source Sans Pro', serif;
     margin: 0px;
     color: white;
@@ -40,4 +40,12 @@ a {
 
 a:hover {
     color: #6bea7c;
+}
+
+.animate__animated {
+    animation-fill-mode: forwards !important;
+}
+
+#header, #home, #about, #experience, #education, #projects, #contact {
+    opacity: 0;
 }

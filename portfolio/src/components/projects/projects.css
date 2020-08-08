@@ -20,11 +20,16 @@
     background: #00c3ff;
     color: white;
     font-weight: 300;
-    border-bottom: 1px solid #252525;
+    border-bottom: 1px solid #0a2146;
 }
 
 .accordion.active {
     background: #252525;
+    border-bottom: none;
+}
+
+.accordion.active.last {
+    border-radius: 0px;
 }
 
 .accordion i {

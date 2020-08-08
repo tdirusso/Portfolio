@@ -63,7 +63,7 @@ function About() {
                 <img className="bitmoji-waving" src={bitmojiWaving} alt="Hello"></img>
                 <div className="about-text-container">
                     <p className="about-text">
-                        <span>Hi there!  &nbsp;My name is Tim DiRusso.</span>
+                        <span>Hi there,  &nbsp;My name is Tim DiRusso.</span>
                         <br></br><br></br>
                         I'm an experienced Software Engineer with demonstrated expertise in
                         full-stack web application development.
@@ -73,6 +73,9 @@ function About() {
                         software company that offers services in
                         remote connectivity and collaboration,
                         IT management and customer engagement.
+                        <br></br><br></br>
+                        Keep scrolling to learn more about my experience
+                        and some neat projects I've developed.
                     </p>
                 </div>
             </div>

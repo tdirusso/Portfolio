@@ -1,3 +1,2 @@
 # Tim DiRusso's Personal Portfolio
-Visit [https://tim-dirusso-portfolio.herokuapp.com](https://www.google.com).
-
+Visit [tim-dirusso-portfolio.herokuapp.com](https://tim-dirusso-portfolio.herokuapp.com).

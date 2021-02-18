@@ -16,7 +16,7 @@ function Experience() {
                     <div className="experience-details">
                         <span className="experience-company">LogMeIn, Inc.</span>
                         <span className="experience-title">Software Engineer, Professional Services</span>
-                        <span className="experience-date">July 2018 &ndash; Present</span>
+                        <span className="experience-date">July 2018 &ndash; Present (3 years)</span>
                     </div>
                 </div>
 
@@ -27,7 +27,7 @@ function Experience() {
                     <div className="experience-details">
                         <span className="experience-company">RedRock Software Corporation</span>
                         <span className="experience-title">Software Engineer Intern</span>
-                        <span className="experience-date">May 2017 &ndash; April 2018</span>
+                        <span className="experience-date">May 2017 &ndash; April 2018 (1 year)</span>
                     </div>
                 </div>
 
@@ -38,7 +38,7 @@ function Experience() {
                     <div className="experience-details">
                         <span className="experience-company">SunState Equipment</span>
                         <span className="experience-title">Information Technology Intern</span>
-                        <span className="experience-date">May 2016 &ndash; July 2017</span>
+                        <span className="experience-date">May 2016 &ndash; July 2017 (1 year)</span>
                     </div>
                 </div>
             </div>

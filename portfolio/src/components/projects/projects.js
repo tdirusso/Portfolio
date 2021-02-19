@@ -4,6 +4,8 @@ import lockifyDash from '../../assets/projects/lockify/dashboard.png';
 import lockifyDeletedSongs from '../../assets/projects/lockify/deletedSongs.png';
 import spotifyVisualizerArtists from '../../assets/projects/spotify-visualizer/visualizer-artists.png';
 import spotifyVisualizerTracks from '../../assets/projects/spotify-visualizer/visualizer-tracks.png';
+import upstreamDash1 from '../../assets/projects/upstream/dashboard1.png';
+import upstreamDash2 from '../../assets/projects/upstream/dashboard2.png';
 
 class Projects extends React.Component {
 
@@ -28,7 +30,7 @@ class Projects extends React.Component {
                 <h1 className="projects-header">Projects<div className="header-dot"></div></h1>
 
                 <div className="projects-list">
-                    <button className="accordion first active" onClick={(event) => { this.expandProject(event) }}>Lockify<i className="fa fa-caret-down flipped"></i></button>
+                    <button className="accordion first active" onClick={(event) => { this.expandProject(event) }}>Lockify &ndash; A Spotify Backup Service<i className="fa fa-caret-down flipped"></i></button>
                     <div className="panel">
                         <span>
                             Have you accidentally deleted or unliked a song from your Spotify playlist, only to find out there is no real way to determine exactly which song your quick and mindless fingers inadvertently swiped off the list?
@@ -56,10 +58,11 @@ class Projects extends React.Component {
                                 <li>No sweat — you can effortlessly delete your Lockify account straight from the dashboard</li>
                             </ul>
                             <img src={lockifyDeletedSongs} alt=""></img>
+                            <a href="https://github.com/tdirusso/Lockify" target="_blank" rel="noopener noreferrer">View on Github</a>
                         </span>
                     </div>
 
-                    <button className="accordion last" onClick={(event) => { this.expandProject(event) }}>Spotify Visualizer<i className="fa fa-caret-down"></i></button>
+                    <button className="accordion" onClick={(event) => { this.expandProject(event) }}>Spotify Data Visualizer<i className="fa fa-caret-down"></i></button>
                     <div className="panel">
                         <span>
                             This web application enables users to make use of their Spotify data.
@@ -79,6 +82,32 @@ class Projects extends React.Component {
                             <h3>Deployment</h3>
                             Heroku — the Data Visualizer web application is hosted on a free tier Heroku Dyno.
                             The NodeJS server currently hosts the static HTML file.
+                            <br></br><br></br>
+                            <a href="https://github.com/tdirusso/Spotify-Data-Visualizer" target="_blank" rel="noopener noreferrer">View on Github</a>
+                        </span>
+                    </div>
+
+                    <button className="accordion last" onClick={(event) => { this.expandProject(event) }}>UpStream &ndash; A Budget Management Tool<i className="fa fa-caret-down"></i></button>
+                    <div className="panel">
+                        <span>
+                            UpStream is a desktop budgeting/finance management tool.
+                            <br></br><br></br>
+                            This application enables real time budget analysis, visualization and management through a seamless and intuitive user interface.
+                            Users can create and modify custom budget categories, import (through downloadable CSV) or manually insert monthly expenses and
+                            view trends and reports of their budget on a month to month basis.
+                            <br></br><br></br>
+                            <img src={upstreamDash1} alt=""></img>
+                            <img src={upstreamDash2} alt=""></img>
+                            <h3>Stack</h3>
+                            <ul>
+                                <li>ElectronJS - Desktop GUI Framework</li>
+                                <li>ReactJS - UI / UX</li>
+                                <li>Chart.js - Charting and Analytics Visuals</li>
+                            </ul>
+                            <h3>Deployment</h3>
+                            This budgeting tool can be downloaded and used as a desktop application via an executable.
+                            <br></br><br></br>
+                            <a href="https://github.com/tdirusso/UpStream" target="_blank" rel="noopener noreferrer">View on Github</a>
                         </span>
                     </div>
                 </div>

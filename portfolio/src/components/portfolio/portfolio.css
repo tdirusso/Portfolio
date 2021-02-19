@@ -36,8 +36,8 @@
         display: block;
     }
     .main-container {
-        padding-right: 25px;
-        padding-left: 25px;
+        padding-right: 35px;
+        padding-left: 35px;
         overflow: hidden;
     }
 }

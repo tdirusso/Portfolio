@@ -95,7 +95,7 @@ class Portfolio extends React.Component {
 	openHeader(event) {
 		event.target.style.display = 'none';
 		this.header.current.header.current.style.left = '0px';
-		document.querySelector('.main-container').style.marginLeft = '280px '
+		document.querySelector('.main-container').style.marginLeft = '280px';
 	}
 
 	render() {

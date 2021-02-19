@@ -27,6 +27,7 @@ const tools = [
 const frameworks = [
     'ReactJS',
     'AngularJS',
+    'ElectronJS',
     'jQuery',
     'Bootstrap'
 ];

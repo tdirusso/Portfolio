@@ -87,3 +87,9 @@
     padding: 0px;
     list-style-position: inside;
 }
+
+@media only screen and (max-width: 767px) {
+    .panel img {
+        width: 100%;
+    }
+}
